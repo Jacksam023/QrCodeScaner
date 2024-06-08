@@ -2,12 +2,10 @@ import { Html5Qrcode } from "html5-qrcode";
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import close from "../../images/close.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Code = () => {
   const navigate = useNavigate();
-
-
 
   const [isEnabled, setEnabled] = useState(false)
   const [qrMessage, ssetQrMessage] = useState("")
@@ -43,9 +41,8 @@ export const Code = () => {
         <img src={close} alt="" />
       </button>
       <h3>Поместите QR-код в рамку</h3>
-
       <div id="qrCodeContainer"></div>
-      {qrMessage && <div className="qr_message">{qrMessage}</div>}
+      {qrMessage && <div className="qr_message"><Link to={qrMessage}>{qrMessage}</Link></div>}
       <button className="start_button" onClick={() => setEnabled(!isEnabled)}>
         {isEnabled ? "on" : "off"}
       </button>

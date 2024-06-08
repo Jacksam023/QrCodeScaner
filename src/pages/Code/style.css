@@ -19,7 +19,6 @@
   height: 13px;
   right: 20px;
   top: 20px;
-
 }
 
 h3 {
@@ -33,10 +32,6 @@ h3 {
   text-align: left;
 }
 
-
-
-
-
 #qrCodeContainer {
   position: relative;
   width: 300px;
@@ -47,7 +42,6 @@ h3 {
 
 #qr-shaded-region {
   border-width: 50px !important;
-
 }
 
 video {
@@ -79,8 +73,8 @@ video {
 
 .start_button {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 200px;
+  right: 100px;
   width: 40px;
   height: 40px;
   background-color: red;
