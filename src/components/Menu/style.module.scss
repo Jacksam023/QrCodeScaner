@@ -1,0 +1,22 @@
+.menu{
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 30px;
+  padding: 10px;
+border-radius: 50px 50px 0 0;
+box-shadow: 0px -30px 20px 0px rgba(114, 114, 114, 0.1);
+background: rgb(255, 255, 255);
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+height: 80px;
+  border-radius: 50px;
+background: rgb(245, 245, 246);
+}
+}
